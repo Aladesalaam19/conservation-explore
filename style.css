@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(4,9,30,0.3), rgba(4,9,30,0.7)), url(img/francesco-ungaro-MJ1Q7hHeGlA-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav img{
+    width: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+nav{
+    display: flex;
+    justify-content: right;
+    padding: 30px 50px;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 50px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+.sign-btn{
+    background: transparent;
+    border: 1px solid rgb(34, 216, 125);
+    padding: 10px;
+    transition: .5s;
+}
+.sign-btn:hover{
+    background: rgb(34, 216, 125);
+}
+
+
+.side-bar{
+    padding-top: 20%;  
+    padding-left: 30px;
+}
+.side-bar li{
+    list-style: none;
+}
+.side-bar img{
+   width: 20px;
+   margin-top: 20px;
+   cursor: pointer;
+}
+
+
+.text-box{
+    position: absolute;
+    text-align: center;
+    color: #fff;
+    top: 40%;
+    right: 30%;
+    
+}
+.text-box h1{
+    font-size: 40px; 
+}
+.input-area{
+    position: absolute;
+    bottom: 40%;
+    left: 26%;
+    width: 50%;
+}
+.search{
+    padding: 10px;
+    background: transparent;
+    width: 70%; 
+    outline: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+.submit{
+    padding: 13px;
+    color: black;
+    background: rgb(34, 216, 125);  
+}
+.submit, a{
+    text-decoration: none;
+    border-radius: 15px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+::placeholder{
+    color: rgba(240, 248, 255, 0.88);
+    font-size: 17px;
+}
+
+.footer{
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 5rem;
+    padding-left: 5rem;
+}
+.foot{
+    color: rgba(240, 248, 255, 0.671);
+}
+
+
+
+@media (max-width: 700px){
+    nav img{
+        display: none;
+    }
+    nav ul li{
+        display: block;
+    }
+    .text-box h1{
+        font-size: 40px; 
+    }
+    .text-box{
+        right: 15%;   
+    }
+    .text-box h1{
+        font-size: 25px;
+        text-align: center;
+    }
+    .input-area{
+        position: absolute;
+        bottom: 44%;
+        left: 15%;
+        width: 50%;
+    }
+    .search{
+        padding: 5px;
+        width: 30%; 
+
+    }
+    .submit{
+        padding: 5px;
+        color: black;
+        background: rgb(34, 216, 125);  
+    }
+}
+
+
+
+
+
+
+
